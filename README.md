@@ -13,4 +13,5 @@ This repository is only used for reviewing Mingwei He(986262)'s assignments on C
 #:cd /path..to/CS544-Enterprise-Architecture<br/>
 #:git pull
 
-<h3>4. Open each Lab directly from Intellij IDEA or anyother software.</h3>
+<h3>4. Open each Lab directly from Intellij IDEA or any other software.</h3>
+Thank you, dear TA!
