@@ -1,5 +1,6 @@
 # CS544-Enterprise-Architecture
-Assignments (labs and homework)
+This project is only for the purpose of reviewing Mingwei He(986262)'s assignment on CS544-Enterprise-Architecture.
+Please remember to edit and submit from original repository, NOT HERE.
 
 <h2> 1. Two ways to clone whole projects</h2>
 <h3>&nbsp;&nbsp;way1.</h3>
@@ -21,6 +22,3 @@ git submodule update --init --recursive
 
 <h2>4. update parent project.</h2>
 git pull
-
-
-
