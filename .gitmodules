@@ -1,0 +1,3 @@
+[submodule "HelloWorldLab"]
+	path = HelloWorldLab
+	url = https://github.com/mervynn/HelloWorldLab.git
