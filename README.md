@@ -2,7 +2,7 @@
 This repository is only for the purpose of reviewing Mingwei He(986262)'s assignment on CS544-Enterprise-Architecture.
 Please remember to edit and submit from original repository, NOT HERE.
 
-<h2> 1. Two ways to clone whole projects</h2>
+<h2> 1. Two ways to clone this projects</h2>
 <h3>&nbsp;&nbsp;way1.</h3>
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;Clone parent project</h4>
 &nbsp;&nbsp;&nbsp;&nbsp;#:git clone https://github.com/mervynn/CS544-Enterprise-Architecture
