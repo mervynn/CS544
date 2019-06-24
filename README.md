@@ -7,7 +7,7 @@ This repository is only used for reviewing Mingwei He(986262)'s assignments on C
 
 <h3>2. Update and reload latest submodules(Labs) from each original repository.</h3>
 #:cd /path..to/CS544-Enterprise-Architecture<br/>
-#:git submodule update --recursive remote merge
+#:git submodule update --recursive --remote --merge
 
 <h3>3. update parent project.</h3>
 #:cd /path..to/CS544-Enterprise-Architecture<br/>
