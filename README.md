@@ -1,5 +1,5 @@
 # CS544-Enterprise-Architecture
-This project is only for the purpose of reviewing Mingwei He(986262)'s assignment on CS544-Enterprise-Architecture.
+This repository is only for the purpose of reviewing Mingwei He(986262)'s assignment on CS544-Enterprise-Architecture.
 Please remember to edit and submit from original repository, NOT HERE.
 
 <h2> 1. Two ways to clone whole projects</h2>
@@ -13,12 +13,8 @@ Please remember to edit and submit from original repository, NOT HERE.
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;Clone parent project with submodules</h4>
 &nbsp;&nbsp;&nbsp;&nbsp;git clone --recursive https://github.com/mervynn/CS544-Enterprise-Architecture
 
-<h2>2. Update and reload latest submodules from each original repository (Usually no need to do this.)</h2>
+<h2>2. Update and reload latest submodules from each original repository.</h2>
 git submodule update --recursive remote merge
 
-
-<h2>3. normal update</h2>
-git submodule update --init --recursive
-
-<h2>4. update parent project.</h2>
+<h2>3. update parent project.</h2>
 git pull
