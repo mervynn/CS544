@@ -1,25 +1,25 @@
 # CS544-Enterprise-Architecture
 Assignments (labs and homework)
 
-# 1. Two ways to clone whole projects
-  ## way1.
-  ## Clone parent project
-  git clone https://github.com/mervynn/CS544-Enterprise-Architecture
-  # Clone submodules
-  git submodule update --init --recursive
+<h2> 1. Two ways to clone whole projects</h2>
+<h3> way1.</h3>
+<h4>Clone parent project</h4>
+git clone https://github.com/mervynn/CS544-Enterprise-Architecture
+<h4>Clone submodules</h4>
+git submodule update --init --recursive
 
-  ## way2.
-  ## Clone parent project with submodules
-  git clone --recursive https://github.com/mervynn/CS544-Enterprise-Architecture
+<h3> way2.</h3>
+<h4>Clone parent project with submodules</h4>
+git clone --recursive https://github.com/mervynn/CS544-Enterprise-Architecture
 
-## 2. Update and reload latest submodules from each original repository (Usually no need to do this.)
+<h2>2. Update and reload latest submodules from each original repository (Usually no need to do this.)</h2>
 git submodule update --recursive remote merge
 
 
-## 3. normal update 
+<h2>3. normal update</h2>
 git submodule update --init --recursive
 
-## 4. update parent project.
+<h2>4. update parent project.</h2>
 git pull
 
 
