@@ -2,13 +2,13 @@
 Assignments (labs and homework)
 
 <h2> 1. Two ways to clone whole projects</h2>
-<h3> way1.</h3>
+<h3>&nbsp;&nbsp;way1.</h3>
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;Clone parent project</h4>
 &nbsp;&nbsp;&nbsp;&nbsp;git clone https://github.com/mervynn/CS544-Enterprise-Architecture
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;Clone submodules</h4>
 &nbsp;&nbsp;&nbsp;&nbsp;git submodule update --init --recursive
 
-<h3> way2.</h3>
+<h3>&nbsp;&nbsp;way2.</h3>
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;Clone parent project with submodules</h4>
 &nbsp;&nbsp;&nbsp;&nbsp;git clone --recursive https://github.com/mervynn/CS544-Enterprise-Architecture
 
