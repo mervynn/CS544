@@ -1,6 +1,6 @@
-# CS544-Enterprise-Architecture
-This repository is only for the purpose of reviewing Mingwei He(986262)'s assignment on CS544-Enterprise-Architecture.
-Please remember to edit and submit from original repository, NOT HERE.
+## CS544-Enterprise-Architecture
+This repository is only for the purpose of reviewing Mingwei He(986262)'s assignment on CS544 at MUM.
+(For edit and submit purpose, please go to original repository)
 
 <h2> 1. Two ways to clone this projects</h2>
 <h3>&nbsp;&nbsp;way1.</h3>
