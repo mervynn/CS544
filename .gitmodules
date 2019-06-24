@@ -4,3 +4,6 @@
 [submodule "Lab1"]
 	path = Lab1
 	url = https://github.com/mervynn/HelloWorldLab
+[submodule "Lab2"]
+	path = Lab2
+	url = https://github.com/mervynn/HelloWorldLab
