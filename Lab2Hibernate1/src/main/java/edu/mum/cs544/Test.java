@@ -1,14 +1,15 @@
 package edu.mum.cs544;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class Test {
     public static void main(String[] args) {
-        List<String> a = new ArrayList<String>(){{
-            add("1");
-            add("2");
-        }};
-        System.out.println(a.get(2));
+        Book book = Book.builder().title("Game of throne")
+                .ISBN("123123")
+                .price(99)
+                .publish_date(new Date())
+                .author("Jon snow").build();
+        System.out.println(book);
+
     }
 }
