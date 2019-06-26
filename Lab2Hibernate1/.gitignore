@@ -16,6 +16,5 @@ gen
 .idea/vcs.xml
 .idea/workspace.xml
 Lab2Hibernate1.iml
-pom.xml
 src/test/
 target/
