@@ -7,5 +7,6 @@ public class Test {
         System.out.println(new Date().getTime());
         System.out.println((int) new Date().getTime());
         System.out.println((int) (new Date().getTime()/1000));
+
     }
 }
