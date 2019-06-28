@@ -22,7 +22,11 @@ public class Main {
         userService.save(user);
 
         // find by email
+        System.out.println("111");
         User userFind = userService.findByEmail("adam@google.com");
+        System.out.println("222");
+        User asdf = userService.findByEmail("adam@google.com");
+        System.out.println("333");
         System.out.println("         *************  User **************");
         System.out.println("User Name:" + userFind.getFirstName() + " " + userFind.getLastName());
 
@@ -62,6 +66,13 @@ public class Main {
         System.out.println("After refresh: " + a.getFirstName());
         System.out.println("Did you see my FirstName? Naive, young man!");
         em.getTransaction().commit();
+        System.out.println(111);
+        em.find(User.class, 1L);
+        System.out.println(222);
+        em.find(User.class, 1L);
+        System.out.println(333);
+        userService.findByEmail("adam@google.com");
+        userService.findByEmail("adam@google.com");
         em.close();
     }
 
