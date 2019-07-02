@@ -1,0 +1,20 @@
+default: 23659
+
+a). @LazyCollection(value = LazyCollectionOption.EXTRA) -> 15931
+
+b). @BatchSize:
+
+(size = 10) -> 14775; (size = 10) -> 16603; (size = 50) -> 12912
+
+c). @Fetch(value = FetchMode.SUBSELECT) -> 9494
+
+d). join fetch -> 10743
+
+e). EntityGraph -> 13255
+
+Based on above test result: SUBSELECT is best.
+
+While there's a wired thing:
+In the debug model of using sub select strategy, it's just stuck there.
+Not went through.
+

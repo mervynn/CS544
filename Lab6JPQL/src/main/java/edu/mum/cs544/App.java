@@ -45,9 +45,10 @@ public class App {
 
         // b) TODO: All airlines that use A380 airplanes
         System.out.println("Question B:");
-        List<Airline> airlines = em.createQuery("select distinct a from Airline a " +
+        TypedQuery query = em.createQuery("select distinct a from Airline a " +
                 "join a.flights f " +
-                "where f.airplane.model = 'A380'", Airline.class).getResultList();
+                "where f.airplane.model = 'A380'", Airline.class);
+        List<Airline> airlines = query.getResultList();
         System.out.println("Airlines that use A380s:");
         for (Airline airline : airlines) {
             System.out.println(airline.getName());
@@ -90,11 +91,11 @@ public class App {
 
         // d) TODO: All flights leaving before 12pm on 08/07/2009
         System.out.println("Question D:");
-        TypedQuery<Flight> query = em.createQuery("from Flight f where f.departureDate = :date " +
+        TypedQuery<Flight> queryQ = em.createQuery("from Flight f where f.departureDate = :date " +
                 "and f.departureTime < :time", Flight.class);
-        query.setParameter("date", date, TemporalType.DATE);
-        query.setParameter("time", time, TemporalType.TIME);
-        flights = query.getResultList();
+        queryQ.setParameter("date", date, TemporalType.DATE);
+        queryQ.setParameter("time", time, TemporalType.TIME);
+        flights = queryQ.getResultList();
         System.out.printf("%-9s%-31s%-31s\n", "Flight:", "Departs:",
                 "Arrives:");
         for (Flight flight : flights) {

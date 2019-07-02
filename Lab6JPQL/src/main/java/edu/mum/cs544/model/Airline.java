@@ -1,5 +1,9 @@
 package edu.mum.cs544.model;
 
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.BatchSize;
+import org.hibernate.annotations.Cache;
+
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -16,6 +20,7 @@ public class Airline {
 	private String name;
 	@OneToMany(mappedBy = "airline")
 	@OrderBy("departureDate, departureTime")
+	@BatchSize(size = 1)
 	private List<Flight> flights;
 
 	/* Constructors */
