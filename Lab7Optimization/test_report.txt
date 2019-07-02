@@ -16,5 +16,5 @@ Based on above test result: SUBSELECT is best.
 
 While there's a wired thing:
 In the debug model of using sub select strategy, it's just stuck there.
-Not went through.
+Not went through all the time.
 
