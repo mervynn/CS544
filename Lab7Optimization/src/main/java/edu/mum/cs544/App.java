@@ -22,8 +22,17 @@ public class App {
         TypedQuery<Owner> query = em.createQuery("from Owner", Owner.class);
 //        query.setHint("javax.persistence.fetchgraph", graph);
         List<Owner> ownerlist = query.getResultList();
+        ownerlist.get(30).getPets();
+        List<Pet> pps = ownerlist.get(30).getPets();
+        int i = 0;
         for (Owner o : ownerlist) {
             o.getPets().size();
+            if((i=i+1) == 7) break;
+        }
+        i = 0;
+        for (Owner o : ownerlist) {
+            o.getPets().size();
+            if((i=i+1) == 7) break;
         }
 
         em.getTransaction().commit();

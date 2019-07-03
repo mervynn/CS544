@@ -15,7 +15,7 @@ public class Owner {
     private String name;
     @OneToMany(cascade = {CascadeType.PERSIST})
     @JoinColumn(name = "clientid")
-    @Fetch(value = FetchMode.SUBSELECT)
+    @BatchSize(size = 5)
     private List<Pet> pets;
 
     public Owner() {
