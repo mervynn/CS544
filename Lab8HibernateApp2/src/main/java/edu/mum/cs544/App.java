@@ -23,5 +23,7 @@ public class App {
         System.out.println(em.createQuery("from Student ").getResultList());
         em.getTransaction().commit();
         em.close();
+
+        Long a = 1L;
     }
 }
