@@ -16,6 +16,7 @@ public class Owner {
     @OneToMany(cascade = {CascadeType.PERSIST})
     @JoinColumn(name = "clientid")
     @BatchSize(size = 5)
+//    @LazyCollection(value = LazyCollectionOption.EXTRA)
     private List<Pet> pets;
 
     public Owner() {

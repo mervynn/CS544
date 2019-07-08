@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="
+     http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/aop 
+     http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+  <bean id="accountService" class="cs544.spring44.aop.xml.AccountService"/>
+  <bean id="traceAspect" class="cs544.spring44.aop.xml.TraceAspect"/>
+
+  <aop:config>
+    <aop:aspect id="tracebeforeAspect" ref="traceAspect">
+      <aop:before method="tracebeforemethod"
+        pointcut="execution(* cs544.spring44.aop.xml.AccountService.addAccount(..))" />
+    </aop:aspect>
+  
+    <aop:aspect id="traceafterAspect" ref="traceAspect">
+      <aop:after method="traceaftermethod"
+        pointcut="execution(* cs544.spring44.aop.xml.AccountService.addAccount(..))" />
+    </aop:aspect>
+  </aop:config>
+</beans>

@@ -1,9 +1,12 @@
 package edu.mum.cs544;
 
+import lombok.ToString;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+@ToString
 public class Course {
 	@Id
 	private long coursenumber;

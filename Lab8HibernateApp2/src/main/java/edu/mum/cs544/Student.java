@@ -1,15 +1,17 @@
 package edu.mum.cs544;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import lombok.Data;
+import lombok.ToString;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
+@ToString
 public class Student {
 	@Id
+	@GeneratedValue
 	private long studentid;
 	private String firstname;
 	private String lastname;

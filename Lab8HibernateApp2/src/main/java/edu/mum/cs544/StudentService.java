@@ -14,7 +14,14 @@ public class StudentService {
 		em.getTransaction().begin();
 		Student student = studentdao.load(studentid);
 		em.getTransaction().commit();
+//		em.getTransaction().begin();
+//		student.setFirstname("123123");
+//		em.persist(student);
+//		em.getTransaction().commit();
+		System.out.println(em.contains(student));
 		em.close();
+		// closed error
+//		System.out.println(em.contains(student));
 		return student;
 	}
 }
