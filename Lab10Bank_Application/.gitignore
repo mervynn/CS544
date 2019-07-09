@@ -7,6 +7,6 @@
 *.iml
 out
 gen
-target
-.gitignore
 src/test
+.gitignore
+target
