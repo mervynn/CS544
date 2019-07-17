@@ -1,0 +1,34 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <listener>
+        <listener-class>edu.mum.cs544.listener.RequestListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>uppercaseServlet</servlet-name>
+        <servlet-class>edu.mum.cs544.servlet.UppercaseServlet</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uppercaseServlet</servlet-name>
+        <url-pattern>/uppercase</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>counterServlet</servlet-name>
+        <servlet-class>edu.mum.cs544.servlet.CounterServlet</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>counterServlet</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>emptyParamFilter</filter-name>
+        <filter-class>edu.mum.cs544.filter.EmptyParamFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>emptyParamFilter</filter-name>
+        <url-pattern>/uppercase</url-pattern>
+    </filter-mapping>
+</web-app>

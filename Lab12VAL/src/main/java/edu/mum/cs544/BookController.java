@@ -13,6 +13,10 @@ import javax.validation.Valid;
 @Controller
 public class BookController {
 
+    public BookController(){
+        System.out.println("construct BookController");
+    }
+
     @Resource
     private BookService bookService;
 
