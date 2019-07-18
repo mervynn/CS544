@@ -6,7 +6,6 @@ import edu.mum.framework.annotations.MyRepository;
 import edu.mum.framework.annotations.MyService;
 import edu.mum.framework.core.MyApplicationContext;
 import edu.mum.framework.core.MyBeanFactory;
-import edu.mum.framework.core.MyHandlerMapping;
 import edu.mum.framework.core.MyViewResolver;
 import edu.mum.framework.core.impl.MyFreemarkerViewResolver;
 import edu.mum.framework.core.impl.MyGenericApplicationContext;
@@ -58,8 +57,7 @@ public class MyContextLoader {
                 Class<?> clazz = Class.forName(className);
                 if (clazz.isAnnotationPresent(MyController.class)
                         || clazz.isAnnotationPresent(MyComponent.class)
-                        || clazz.isAnnotationPresent(MyService.class)
-                        || clazz.isAnnotationPresent(MyRepository.class)) {
+                        || clazz.isAnnotationPresent(MyService.class)) {
                     bf.addBean(MyUtils.toLowerFirstWord(clazz.getSimpleName()), clazz.newInstance());
                 }
             } catch (Exception e) {

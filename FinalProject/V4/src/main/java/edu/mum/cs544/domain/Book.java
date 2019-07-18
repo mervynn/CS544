@@ -1,10 +1,18 @@
 package edu.mum.cs544.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Book {
+    @Id
     private Integer id;
     private String title;
     private String ISBN;
     private String author;
+
+    public Book() {
+    }
 
     public Book(Integer id, String title, String ISBN, String author) {
         this.id = id;
@@ -43,5 +51,15 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", ISBN='" + ISBN + '\'' +
+                ", author='" + author + '\'' +
+                '}';
     }
 }

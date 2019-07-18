@@ -1,11 +1,11 @@
 package edu.mum.cs544.controller;
 
 import edu.mum.cs544.domain.Book;
+import edu.mum.cs544.service.IBookService;
 import edu.mum.cs544.service.ITestService;
 import edu.mum.framework.annotations.*;
 import edu.mum.framework.core.MyModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @MyController
@@ -14,6 +14,9 @@ public class TestController {
 
     @MyAutowired
     ITestService iTestService;
+
+    @MyAutowired
+    IBookService iBookService;
 
     @MyRequestMapping("/")
     public String init() {
@@ -33,11 +36,9 @@ public class TestController {
 
     @MyResponseBody
     @MyRequestMapping("/books")
-    public List<Book> rest(){
-        List<Book> books = new ArrayList<>();
-        for(int i = 0; i < 10; i++)
-            books.add(new Book(i, "title" + i , "ISBN" + i, "Author" + i));
-        return books;
+    public List<Book> rest() {
+        iBookService.saveBook(null);
+        return iBookService.getBooks();
 
     }
 }

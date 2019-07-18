@@ -68,7 +68,6 @@ public class MyDispatcherServlet extends HttpServlet {
             return;
         }
         MyView myView = myViewResolver.resolveName((String) mv.getView());
-
         myView.render(mv.getModel(), req, res);
     }
 
